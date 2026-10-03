@@ -26,7 +26,7 @@ d8f3dc
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    background-color: black;
+    background-color: #030907;
     color: #d8f3dc;
 }
 
@@ -1042,7 +1042,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000000;
+    background: #030907;
     overflow: hidden;
 }
 
@@ -1533,34 +1533,48 @@ p {
 /* LATEST NEWS */
 
 .latest-news-page {
+
     width: 100%;
+
     margin: 100px auto;
+
     font-family: 'Inter', sans-serif;
 
     background: linear-gradient(
         135deg,
         #1b4332,
     );
+
     border: 1px solid #40916c;
 
     box-shadow:
         0 0 20px 5px #081c15,
         inset 0 0 40px rgba(45, 106, 79, 0.15);
+
 }
 
 .latest-news {
+
     width: 86%;
+
     margin: 100px auto;
+
 }
 
 /* TITLE */
 
 .news-title {
+
     font-family: 'Space Grotesk', sans-serif;
+
     font-size: 38px;
+
     font-weight: 700;
+
     text-align: center;
+
     margin: 0 0 55px;
+
     background: linear-gradient(
         90deg,
         #d8f3dc,
@@ -1568,153 +1582,237 @@ p {
         #95d5b2,
         #74c69d
     );
+
     -webkit-background-clip: text;
+
     -webkit-text-fill-color: transparent;
+
     background-clip: text;
+
 }
 
 /* CONTAINER */
 
 .news-container {
+
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 65px;
+
 }
 
 /* NEWS CARD */
 
 .news-card {
+
     min-width: 0;
-    overflow: hidden;
+
+    overflow: visible;
+
     text-align: left;
+
     background: transparent;
+
     transition:
         transform 0.4s ease;
+
 }
 
 .news-card:hover {
+
     transform: translateY(-5px);
+
 }
 
 /* IMAGE BOX */
 
 .news-image {
+
     width: 100%;
+
     aspect-ratio: 1 / 1;
+
     overflow: hidden;
+
     position: relative;
+
 }
 
 /* IMAGE */
 
 .news-image img {
+
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
+
     display: block;
+
     transition:
         transform 0.5s ease;
+
 }
 
 /* IMAGE HOVER */
 
 .news-card:hover .news-image img {
+
     transform: scale(1.07);
+
 }
 
 /* CATEGORY */
 
 .news-category {
+
     margin-top: 25px;
+
     font-size: 15px;
+
     font-weight: 500;
+
     color: #74c69d;
+
     transition:
         color 0.3s ease;
+
 }
 
 /* HEADING */
 
 .news-heading {
+
     margin: 20px 0 18px;
+
     font-family: 'Space Grotesk', sans-serif;
+
     font-size: 24px;
+
     font-weight: 600;
+
     line-height: 1.35;
+
     color: #d8f3dc;
+
     transition:
         color 0.3s ease,
         transform 0.3s ease;
+
 }
 
 /* TITLE HOVER */
 
 .news-card:hover .news-heading {
+
     color: #74c69d;
+
     transform: translateX(3px);
+
 }
 
 /* DESCRIPTION */
 
 .news-description {
+
     margin: 0;
+
     max-width: 95%;
+
     font-size: 16px;
+
     line-height: 1.7;
+
     color: #8fa79b;
+
 }
 
 /* READ MORE */
 
 .news-read-more {
+
     display: inline-block;
+
     margin-top: 22px;
+
     position: relative;
+
     text-decoration: none;
+
     color: #d8f3dc;
+
     font-size: 16px;
+
     font-weight: 500;
+
     transition:
         color 0.3s ease;
+
 }
 
 .news-read-more::after {
+
     content: "";
+
     position: absolute;
+
     left: 0;
+
     bottom: -6px;
+
     width: 0;
+
     height: 2px;
+
     background: #74c69d;
+
     transition:
         width 0.35s ease;
+
 }
 
 .news-read-more:hover {
+
     color: #74c69d;
+
 }
 
 .news-read-more:hover::after {
+
     width: 100%;
+
 }
 
 /* CARD IMAGE ROUNDED CORNERS */
 
 .news-image {
+
     border-radius: 40px 20px;
+
     box-shadow:
         0 0 15px 3px #1b4332;
+
+    border-radius: 40px 20px;
+
     transition:
         border-radius 0.5s ease,
         box-shadow 0.5s ease;
+
 }
 
 .news-card:hover .news-image {
+
     border-radius: 20px 40px;
+
     box-shadow:
         0 5px 25px 7px #1b4332;
-}
 
+    border-radius: 20px 40px;
+
+}
 /* RESPONSIVE - TABLET */
 
 @media (max-width: 1000px) {
@@ -1757,7 +1855,7 @@ p {
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     gap: 40px;
-    background: #000000;
+    background: #030907;
 }
 
 /* SERVICE ITEM */
@@ -1902,7 +2000,7 @@ p {
     padding: 0 18px;
     border: 1px solid #40916c;
     outline: none;
-    background: #000000;
+    background: #030907;
     color: #d8f3dc;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
